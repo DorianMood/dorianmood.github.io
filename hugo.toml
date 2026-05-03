@@ -1,0 +1,28 @@
+theme = "nostyleplease"
+# defaultContentLanguage = "ru"
+# defaultContentLanguageInSubdir = false   # /ru/ не будет в URL
+
+[languages]
+  [languages.ru]
+    title = "DorianBlog"
+    languageName = "ru"
+    weight = 1
+    [[languages.ru.menu.main]]
+      name = "Посты"
+      url = "/posts/"
+      weight = 1
+    [[languages.ru.menu.main]]
+      name = "Обо мне"
+      url = "/about/"
+      weight = 2
+  [languages.en]
+    title = "DorianBlog"
+    languageName = "en"
+    weight = 2
+
+[params]
+  author = "Nikita"
+  [params.theme_config]
+    appearance = "auto"   # light / dark / auto
+    show_description = true
+

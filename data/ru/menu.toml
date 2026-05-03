@@ -1,0 +1,8 @@
+[[entries]]
+title = "Все публикации"
+
+  [entries.post_list]
+  limit = 5
+  show_more = true
+  show_more_text = "В архив..."
+  show_more_url = "posts"

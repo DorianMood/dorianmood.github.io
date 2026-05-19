@@ -331,7 +331,7 @@ While OpenTelemetry is rapidly becoming the gold standard for backend distribute
 - Bundle Size Impact: The full OTel SDK is heavy. If bundle size is a critical KPI for your team, you will need to invest time into dynamic code-splitting and lazy-loading telemetry chunks asynchronously.
 - Session-Level Tracking Quirks: If you want to map an entire user session to a single trace span (like we did), you will hit edge cases. Tracking a clean "session end" event in a browser or web-view is notoriously unreliable. Relying on onbeforeunload or sendBeacon helps, but it’s rarely 100% foolproof.
 
-## Заключение
+## Conclusion
 
 People often ask: "Why use OpenTelemetry when we already have Sentry?" In our ecosystem, they solve completely different problems. We use Sentry to catch technical client-side errors, track Core Web Vitals, and monitor UI health. We use OpenTelemetry to map business logic and trace journeys across our entire infrastructure.
 

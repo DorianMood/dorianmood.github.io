@@ -1,7 +1,9 @@
 <p>
-  {{ range .Site.Languages }} {{ if eq .Lang $.Site.Language.Lang }}
-  <strong>[{{ .LanguageName }}]</strong>
+  {{ range .AllTranslations }} {{ if eq .Language.Lang $.Site.Language.Lang }}
+  <strong>[{{ .Language.Lang }}]</strong>
   {{ else }}
-  <a href="/{{ .LanguageName }}" hreflang="{{ .Lang }}">{{ .LanguageName }}</a>
+  <a href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}"
+    >{{ .Language.Lang }}</a
+  >
   {{ end }} {{ end }}
 </p>
